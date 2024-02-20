@@ -1,1 +1,12 @@
-ggg
+CREATE TABLE mcu_characters (id INTEGER PRIMARY KEY,
+                             real_name TEXT,
+                             super_name TEXT,
+                             gender TEXT,
+                             height NUMERIC,
+                             weight NUMBERIC,
+                             age INTEGER,
+                             hometown TEXT,
+                             main_skill TEXT,
+                             hero_villain TEXT,
+                             popularity TEXT,
+                             num_of_movies INTEGER);
