@@ -18,25 +18,78 @@ CREATE TABLE reviews
 
 INSERT INTO movies (id,title,release_year,genre,rating) 
 VALUES (1,'The Lion King',1994,'adventure','G');
+INSERT INTO movies (id,title,release_year,genre,rating) 
+VALUES (2,'Coco',2017,'adventure','PG');
+INSERT INTO movies (id,title,release_year,genre,rating)
+VALUES (3,'Wall-e',2008,'adventure','G');
+INSERT INTO movies (id,title,release_year,genre,rating) 
+VALUES (4,'Toy Story',1995,'adventure','G');
+INSERT INTO movies (id,title,release_year,genre,rating) 
+VALUES (5,'Up',2009,'adventure','PG');
+INSERT INTO movies (id,title,release_year,genre,rating) 
+VALUES (6,'Toy Story 3',2010,'adventure','E');
+INSERT INTO movies (id,title,release_year,genre,rating) 
+VALUES (7,'Finding Nemo',2003,'adventure','G');
+INSERT INTO movies (id,title,release_year,genre,rating) 
+VALUES (8,'Pirates of the Caribbean: The Curse of the Black Pearl',2003,'fantasy','PG-13');
+INSERT INTO movies (id,title,release_year,genre,rating) 
+VALUES (9,'Ratatouille',2007,'comedy','G');
+INSERT INTO movies (id,title,release_year,genre,rating) 
+VALUES (10,'Inside Out',2015,'adventure','PG');
 
+INSERT INTO reviewers (id,first_name,last_name) 
+VALUES (1,'Hannah','Radclyffe');
+INSERT INTO reviewers (id,first_name,last_name) 
+VALUES (2,'Abigale','Elwyn');
+INSERT INTO reviewers (id,first_name,last_name) 
+VALUES (3,'Jenson','Taylor');
+INSERT INTO reviewers (id,first_name,last_name) 
+VALUES (4,'Matthew','Perry');
+INSERT INTO reviewers (id,first_name,last_name) 
+VALUES (5,'Nicole','Webster');
+INSERT INTO reviewers (id,first_name,last_name) 
+VALUES (6,'Norman','Reedus');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+INSERT INTO reviews (id,movie_id,reviewer_id,rating) 
+VALUES (1,1,1,8.2);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating) 
+VALUES (2,1,4,9.3);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating)
+VALUES (3,2,2,7.8);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating) 
+VALUES (4,2,5,8.0);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating) 
+VALUES (5,3,1,9.1);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating) 
+VALUES (6,3,5,8.9);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating) 
+VALUES (7,4,2,5.5);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating) 
+VALUES (8,4,3,6.7);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating) 
+VALUES (9,4,4,6.0);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating)
+VALUES (10,5,1,9.8);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating) 
+VALUES (11,5,3,9.6);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating)
+VALUES (12,6,2,7.8);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating) 
+VALUES (13,6,3,8.1);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating)
+VALUES (14,7,3,9.4);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating) 
+VALUES (15,7,4,8.8);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating) 
+VALUES (16,8,5,7.9);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating) 
+VALUES (17,8,6,9.9);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating) 
+VALUES (18,10,4,6.3);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating)
+VALUES (19,10,5,8.2);
+INSERT INTO reviews (id,movie_id,reviewer_id,rating) 
+VALUES (20,10,6,7.7);
 
 > Find the first name, last name, title and rating for each reviewer.
 
