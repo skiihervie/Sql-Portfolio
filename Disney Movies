@@ -16,7 +16,8 @@ CREATE TABLE reviews
 	reviewer_id INT,
 	rating DECIMAL(2,1));
 
-INSERT INTO movies (id,title,release_year,genre,rating) VALUES
+INSERT INTO movies (id,title,release_year,genre,rating) 
+VALUES (1,'The Lion King',1994,'adventure','G');
 
 
 
