@@ -103,3 +103,16 @@ INNER JOIN reviews
 INNER JOIN movies
 	ON movies.id = reviews.movie_id
 ORDER BY title
+
+>
+
+SELECT title,
+	   reviews.rating,
+	   first_name,
+	   last_name
+FROM reviewers
+INNER JOIN reviews
+ON reviewers.id = reviews.reviewer_id
+INNER JOIN movies
+ON movies.id = reviews.movie_id
+WHERE first_name LIKE '%N%';
