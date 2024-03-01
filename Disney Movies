@@ -104,7 +104,7 @@ INNER JOIN movies
 	ON movies.id = reviews.movie_id
 ORDER BY title
 
->
+> Find the title, rating, first name and last name of reviewers who have an 'N' in their first name.
 
 SELECT title,
 	   reviews.rating,
@@ -112,7 +112,15 @@ SELECT title,
 	   last_name
 FROM reviewers
 INNER JOIN reviews
-ON reviewers.id = reviews.reviewer_id
+	ON reviewers.id = reviews.reviewer_id
 INNER JOIN movies
-ON movies.id = reviews.movie_id
+	ON movies.id = reviews.movie_id
 WHERE first_name LIKE '%N%';
+
+> Find the unreviewed movie.
+
+SELECT title AS missing_rating
+FROM movies
+LEFT JOIN reviews
+      ON movies.id = reviews.movie_id
+    WHERE movies.rating IS NULL;
