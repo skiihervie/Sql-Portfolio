@@ -1,19 +1,22 @@
 CREATE TABLE movies
-	(id INT,
+	(id INT PRIMARY KEY,
 	title VARCHAR(100),
 	release_year INT,
 	genre VARCHAR(100),
 	rating VARCHAR(100));
 
+CREATE TABLE reviewers
+	(id INT PRIMARY KEY,
+	first_name VARCHAR(100),
+	last_name VARCHAR(100));
 
-
-
-
-CREATE TABLE REVIEWS
-	(id INT,
+CREATE TABLE reviews
+	(id INT PRIMARY KEY,
 	movie_id INT,
 	reviewer_id INT,
-	rating DECIMAL(2,1))
+	rating DECIMAL(2,1));
+
+INSERT INTO movies (id,title,release_year,genre,rating) VALUES
 
 
 
