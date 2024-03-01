@@ -1,11 +1,45 @@
+CREATE TABLE movies
+	(id INT,
+	title VARCHAR(100),
+	release_year INT,
+	genre VARCHAR(100),
+	rating VARCHAR(100));
 
 
 
+
+
+CREATE TABLE REVIEWS
+	(id INT,
+	movie_id INT,
+	reviewer_id INT,
+	rating DECIMAL(2,1))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+> Find the first name, last name, title and rating for each reviewer.
 
 SELECT title,
-	   reviews.rating,
-	   first_name,
-	   last_name
+       reviews.rating,
+       first_name,
+       last_name
 FROM reviewers
 INNER JOIN reviews
 	ON reviewers.id = reviews.reviewer_id
